@@ -13,9 +13,9 @@ output: newRepeatCounter.GetType() == RepeatCounter;
 *2a/2b) The WordObject returns the inputted word and sentence using getter methods. This pair of tests are the next to be performed because they only checks that the inputted arguments are successfully passed into the object and that the getter methods are functioning correctly.
 2a output: newRepeatCounter.GetWord() == "cat";
 2b output: newRepeatCounter.GetSentence() == "The cat came back.";
-*3) The RepeatCounter takes a single lower-case character as a 'Word' argument and a single lower-case character as a 'Sentence' argument and returns 'true' if both are identical. This is the first test to perform computations on the inputted values and uses identical values to make sure that the basic functionality to check for matches is in place.
+*3) The RepeatCounter takes a single lower-case character as a 'Word' argument and a single lower-case character as a 'Sentence' argument and returns '1' if both are identical. This is the first test to perform computations on the inputted values and uses identical values to make sure that the basic functionality to check for matches is in place.
 input: RepeatCounter newRepeatCounter = new RepeatCounter("c", "c");
-output: true;
+output: 1;
 *4) The RepeatCounter takes a single lower-case character as a 'Word' argument and a single lower-case character as a 'Sentence' argument and returns 'false' if both are different. This confirms that the program can return true negatives as well as the previously demonstrated true positives.
 input: RepeatCounter newRepeatCounter = new RepeatCounter("c", "d");
 output: false;

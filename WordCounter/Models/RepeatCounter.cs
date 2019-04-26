@@ -14,6 +14,16 @@ namespace WordCounter.Models
       _sentence = sentence;
     }
 
+    public int CheckMatches()
+    {
+      int matches = 0;
+      if (_word == _sentence)
+      {
+        matches++;
+      }
+      return matches;
+    }
+
     public string GetWord()
     {
       return _word;

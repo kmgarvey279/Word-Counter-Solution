@@ -25,5 +25,11 @@ namespace WordCounter.Tests
       RepeatCounter testRepeatCounter = new RepeatCounter("cat", "The cat came back.");
       Assert.AreEqual("The cat came back.", testRepeatCounter.GetSentence());
     }
+    [TestMethod]
+    public void CheckMatches_ReturnsNumberOfMatches_Int()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter("c", "c");
+      Assert.AreEqual(1, testRepeatCounter.CheckMatches());
+    }
   }
 }
