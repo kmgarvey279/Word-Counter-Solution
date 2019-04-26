@@ -49,5 +49,23 @@ namespace WordCounter.Tests
       RepeatCounter testRepeatCounter = new RepeatCounter("cat", "dog");
       Assert.AreEqual(0, testRepeatCounter.CheckMatches());
     }
+    [TestMethod]
+    public void CheckMatches_ReturnsMatchesForCharAndString_Int()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter("c", "The cat came back.");
+      Assert.AreEqual(3, testRepeatCounter.CheckMatches());
+    }
+    [TestMethod]
+    public void CheckMatches_ReturnsCaseInsensitiveMatches_Int()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter("C", "The Cat in the Hat came back.");
+      Assert.AreEqual(3, testRepeatCounter.CheckMatches());
+    }
+    [TestMethod]
+    public void CheckMatches_ReturnsMatchesForStrings_Int()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter("cat", "Does the cat from 'The Cat in the Hat' have a real name?");
+      Assert.AreEqual(2, testRepeatCounter.CheckMatches());
+    }
   }
 }

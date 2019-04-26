@@ -17,10 +17,19 @@ namespace WordCounter.Models
     public int CheckMatches()
     {
       int matches = 0;
-
-      if (_sentence.Contains(_word))
+      string wordToCheck = _word.ToUpper();
+      string sentenceToCheck = _sentence.ToUpper();
+      for(int i = 0; i < sentenceToCheck.Length; i++)
       {
-        matches++;
+        Console.WriteLine(sentenceToCheck[i]);
+        if(wordToCheck[0] == sentenceToCheck[i])
+        {
+          string substringToCheck = sentenceToCheck.Substring(i, wordToCheck.Length);
+          if(substringToCheck == wordToCheck)
+          {
+            matches++;
+          }
+        }
       }
       return matches;
     }
