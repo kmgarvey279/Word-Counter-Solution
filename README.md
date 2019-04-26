@@ -1,4 +1,4 @@
-#Word Counter
+#_Word Counter_
 
 ### _The program takes both a single word, and a sentence from the user as input and then returns a number corresponding with the number of times the inputted word appears in the inputted sentence._04/26/2019_
 
@@ -39,7 +39,7 @@ input: RepeatCounter newRepeatCounter = new RepeatCounter("cat", "Does the cat f
 output: 2;
 *11) The RepeatCounter takes a multiple character string as a 'Word' argument and a multiple word string as a 'Sentence' argument and returns the number of times the word appears in the sentence without including instances in which the word appears as part of a longer word.
 input: RepeatCounter newRepeatCounter = new RepeatCounter("cat", "The word 'concatenate' can be created by concatenating  'con' + 'cat' + 'enate'.");
-output: 1;
+output: 1;_
 
 ## Known Bugs
 
