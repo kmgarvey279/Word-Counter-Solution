@@ -62,8 +62,6 @@ namespace WordCounter.Models
       }
     }
 
-
-
     public string GetWord()
     {
       return _word;
