@@ -52,14 +52,14 @@ namespace WordCounter.Tests
     [TestMethod]
     public void CheckMatches_ReturnsMatchesForCharAndString_Int()
     {
-      RepeatCounter testRepeatCounter = new RepeatCounter("c", "The cat came back.");
-      Assert.AreEqual(3, testRepeatCounter.CheckMatches());
+      RepeatCounter testRepeatCounter = new RepeatCounter("c", "cat starts with 'c'.");
+      Assert.AreEqual(1, testRepeatCounter.CheckMatches());
     }
     [TestMethod]
     public void CheckMatches_ReturnsCaseInsensitiveMatches_Int()
     {
-      RepeatCounter testRepeatCounter = new RepeatCounter("C", "The Cat in the Hat came back.");
-      Assert.AreEqual(3, testRepeatCounter.CheckMatches());
+      RepeatCounter testRepeatCounter = new RepeatCounter("C", "Cat starts with 'C'.");
+      Assert.AreEqual(1, testRepeatCounter.CheckMatches());
     }
     [TestMethod]
     public void CheckMatches_ReturnsMatchesForStrings_Int()

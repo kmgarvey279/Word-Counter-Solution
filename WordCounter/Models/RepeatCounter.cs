@@ -38,16 +38,23 @@ namespace WordCounter.Models
       {
         for(int i = 0; i < sentenceToCheck.Length; i++)
         {
-          if(wordToCheck[0] == sentenceToCheck[i] && !Char.IsLetter(sentenceToCheck[i-1]))
+          if (wordToCheck[0] == sentenceToCheck[i])
           {
-            string substringToCheck = sentenceToCheck.Substring(i, wordToCheck.Length);
-            Console.WriteLine(substringToCheck);
-            Console.WriteLine(wordToCheck);
-            if(substringToCheck == wordToCheck && !Char.IsLetter(sentenceToCheck[i+substringToCheck.Length]))
+            if(i == 0)
             {
-              Console.WriteLine(substringToCheck);
-              Console.WriteLine(wordToCheck);
-              matches++;
+              string substringToCheck = sentenceToCheck.Substring(i, wordToCheck.Length);
+              if(substringToCheck == wordToCheck && !Char.IsLetter(sentenceToCheck[i+substringToCheck.Length]))
+              {
+                matches++;
+              }
+            }
+            else if (!Char.IsLetter(sentenceToCheck[i-1]))
+            {
+              string substringToCheck = sentenceToCheck.Substring(i, wordToCheck.Length);
+              if(substringToCheck == wordToCheck && !Char.IsLetter(sentenceToCheck[i+substringToCheck.Length]))
+              {
+                matches++;
+              }
             }
           }
         }
