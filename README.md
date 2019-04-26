@@ -1,8 +1,8 @@
-#_Word Counter_
+# _Word-Counter_
 
-### _The program takes both a single word, and a sentence from the user as input and then returns a number corresponding with the number of times the inputted word appears in the inputted sentence._04/26/2019_
+#### _The program takes both a single word, and a sentence from the user as input and then returns a number corresponding with the number of times the inputted word appears in the inputted sentence, 04/26/2019_
 
-### _***Kevin Garvey***_
+#### _***Kevin Garvey***_
 
 ## Description
 
@@ -43,6 +43,8 @@ output: 1;_
 
 ## Known Bugs
 
+_n/a_
+
 ## Support and contact details
 
 _Please contact me at kmgarvey279@gmail.com if you have any questions or comments._
@@ -52,6 +54,7 @@ _Please contact me at kmgarvey279@gmail.com if you have any questions or comment
 _C#_
 _Mono_
 _.Net_
+
 ### License
 
 _This software is licensed under the MIT license._
