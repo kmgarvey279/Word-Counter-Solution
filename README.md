@@ -31,9 +31,12 @@ output: 2;
 *8) The RepeatCounter takes an upper-case character as a 'Word' argument and a lower-case string as a 'Sentence' argument and returns the number of times the character appears in the word (regardless of casing). This is slightly more complex then the previous test because it is case insensitive.
 input: RepeatCounter newRepeatCounter = new RepeatCounter("C", "The Cat in the Hat came back.");
 output: 2;
-*9) The RepeatCounter takes a multiple character word as a 'Word' argument and a single string as a 'Sentence' argument and returns the number of times the character appears in the word. This looks at matching words rather then just characters and combines all of the previously tested behavior.
+*9) The RepeatCounter takes a multiple character string as a 'Word' argument and a multiple word string as a 'Sentence' argument and returns the number of times the word appears in the sentence. This looks at matching words rather then just characters and combines all of the previously tested behavior.
 input: RepeatCounter newRepeatCounter = new RepeatCounter("cat", "Does the cat from 'The Cat in the Hat' have a real name?");
 output: 2;
+*10) The RepeatCounter takes a multiple character string as a 'Word' argument and a multiple word string as a 'Sentence' argument and returns the number of times the word appears in the sentence without including instances in which the word appears as part of a longer word.
+input: RepeatCounter newRepeatCounter = new RepeatCounter("cat", "The word 'concatenate' can be created by concatenating  'con' + 'cat' + 'enate'.");
+output: 1;
 
 ## Known Bugs
 
