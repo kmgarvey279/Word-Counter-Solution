@@ -13,5 +13,14 @@ namespace WordCounter.Models
       _word = word;
       _sentence = sentence;
     }
+
+    public string GetWord()
+    {
+      return _word;
+    }
+    public string GetSentence()
+    {
+      return _sentence;
+    }
   }
 }
