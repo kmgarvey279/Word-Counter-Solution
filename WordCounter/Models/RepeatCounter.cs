@@ -17,11 +17,18 @@ namespace WordCounter.Models
     public int CheckMatches()
     {
       int matches = 0;
+      foreach (char letter in _word)
+      {
+        if (!Char.IsLetter(letter))
+        {
+          return -1;
+        }
+      }
       string wordToCheck = _word.ToUpper();
       string sentenceToCheck = _sentence.ToUpper();
       if(wordToCheck.Length > sentenceToCheck.Length)
       {
-        return 0;
+        return -1;
       }
       else if(wordToCheck.Length == sentenceToCheck.Length)
       {
