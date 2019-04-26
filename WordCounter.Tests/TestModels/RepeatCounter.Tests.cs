@@ -26,10 +26,28 @@ namespace WordCounter.Tests
       Assert.AreEqual("The cat came back.", testRepeatCounter.GetSentence());
     }
     [TestMethod]
-    public void CheckMatches_ReturnsNumberOfMatches_Int()
+    public void CheckMatches_ReturnsMatchForChar_Int()
     {
       RepeatCounter testRepeatCounter = new RepeatCounter("c", "c");
       Assert.AreEqual(1, testRepeatCounter.CheckMatches());
+    }
+    [TestMethod]
+    public void CheckMatches_ReturnsNoMatchForChar_Int()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter("c", "d");
+      Assert.AreEqual(0, testRepeatCounter.CheckMatches());
+    }
+    [TestMethod]
+    public void CheckMatches_ReturnsMatchForString_Int()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter("cat", "cat");
+      Assert.AreEqual(1, testRepeatCounter.CheckMatches());
+    }
+    [TestMethod]
+    public void CheckMatches_ReturnsNoMatchForString_Int()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter("cat", "dog");
+      Assert.AreEqual(0, testRepeatCounter.CheckMatches());
     }
   }
 }

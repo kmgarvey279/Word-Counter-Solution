@@ -17,7 +17,8 @@ namespace WordCounter.Models
     public int CheckMatches()
     {
       int matches = 0;
-      if (_word == _sentence)
+
+      if (_sentence.Contains(_word))
       {
         matches++;
       }
