@@ -1,6 +1,11 @@
 body{
   background-color: lightyellow;
   margin-left: 160px;
+  text-align: center;
+}
+
+ul{
+  text-align: left;
 }
 
 div#sidebar {

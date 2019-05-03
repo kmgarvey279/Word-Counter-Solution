@@ -1,0 +1,16 @@
+@{
+Layout = "_Layout";
+}
+
+<h1>Scrabble Scorer</h1>
+<p>Enter a word, and we will tell you its value in the game of Scrabble.</p>
+
+<form action="/scrabblescore" method="post">
+  <label for="wordInput">Word</label>
+  <input id="wordInput" name="wordInput" type="text">
+
+  <button type="submit">Add</button>
+</form>
+
+<p><a href="/">Home</a></p>
+<p><a href="/scrabblescore">View my word list</a></p>
