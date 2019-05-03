@@ -7,3 +7,17 @@ C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\
 C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.AssemblyInfo.cs
 C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.dll
 C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.pdb
+C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\bin\Debug\netcoreapp2.2\WordCounter.runtimeconfig.json
+C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\bin\Debug\netcoreapp2.2\WordCounter.runtimeconfig.dev.json
+C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\bin\Debug\netcoreapp2.2\WordCounter.Views.dll
+C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\bin\Debug\netcoreapp2.2\WordCounter.Views.pdb
+C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.RazorAssemblyInfo.cache
+C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.RazorAssemblyInfo.cs
+C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.TagHelpers.input.cache
+C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.TagHelpers.output.cache
+C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.RazorCoreGenerate.cache
+C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.RazorTargetAssemblyInfo.cache
+C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.RazorTargetAssemblyInfo.cs
+C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.Views.pdb
+C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.csproj.CopyComplete
