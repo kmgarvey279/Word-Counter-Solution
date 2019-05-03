@@ -12,5 +12,12 @@ namespace WordCounter.Controllers
     {
       return View();
     }
+
+    // [HttpGet("/repeatcounters")]
+    // public ActionResult Index()
+    // {
+    //   List<RepeatCounter> allRepeatCounters = RepeatCounter.GetAll();
+    //   return View(allRepeatCounters);
+    // }
   }
 }

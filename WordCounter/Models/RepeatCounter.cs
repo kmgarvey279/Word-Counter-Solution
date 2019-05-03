@@ -7,11 +7,15 @@ namespace WordCounter.Models
   {
     private string _word;
     private string _sentence;
+    // private int _id;
+    private static List<RepeatCounter> _instances = new List<RepeatCounter> { };
 
     public RepeatCounter(string word, string sentence)
     {
       _word = word;
       _sentence = sentence;
+      _instances.Add(this);
+      // _id = _instances.Count;
     }
 
     public int CheckMatches()
@@ -77,5 +81,25 @@ namespace WordCounter.Models
     {
       return _sentence;
     }
+
+    public static List<RepeatCounter> GetAll()
+    {
+      return _instances;
+    }
+
+    public static void ClearAll()
+    {
+      _instances.Clear();
+    }
+    //
+    // public static int GetId()
+    // {
+    //   return _id;
+    // }
+    //
+    // public static RepeatCounter Find(int searchId)
+    // {
+    //   return _instances[searchId-1];
+    // }
   }
 }

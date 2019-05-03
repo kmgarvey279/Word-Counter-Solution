@@ -1,12 +1,18 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordCounter.Models;
 using System;
+using System.Collections.Generic;
 
 namespace WordCounter.Tests
 {
   [TestClass]
-  public class RepeatCounterTests
+  public class RepeatCounterTests : IDisposable
   {
+    public void Dispose()
+    {
+        RepeatCounter.ClearAll();
+    }
+
     [TestMethod]
     public void RepeatCounterConstructor_CreatesInstanceOfRepeatCounter_RepeatCounter()
     {
@@ -84,6 +90,14 @@ namespace WordCounter.Tests
     {
       RepeatCounter testRepeatCounter = new RepeatCounter("concatinate", "cat");
       Assert.AreEqual(-1, testRepeatCounter.CheckMatches());
+    }
+
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_RepeatCounterList()
+    {
+      List<RepeatCounter> newList = new List<RepeatCounter> { };
+      List<RepeatCounter> result = RepeatCounter.GetAll();
+      CollectionAssert.AreEqual(newList, result);
     }
   }
 }
