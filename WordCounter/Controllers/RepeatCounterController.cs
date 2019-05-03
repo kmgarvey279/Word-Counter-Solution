@@ -5,7 +5,7 @@ using WordCounter.Models;
 
 namespace WordCounter.Controllers
 {
-  public class RepeatCounterController : Controller
+  public class RepeatCountersController : Controller
   {
     [HttpGet("/repeatcounters/new")]
     public ActionResult New()
@@ -19,5 +19,14 @@ namespace WordCounter.Controllers
       List<RepeatCounter> allRepeatCounters = RepeatCounter.GetAll();
       return View(allRepeatCounters);
     }
+
+    [HttpPost("/repeatcounters")]
+    public ActionResult Create(string wordInput, string sentenceInput)
+    {
+      RepeatCounter newCounter = new RepeatCounter(wordInput, sentenceInput);
+      List<RepeatCounter> allRepeatCounters = RepeatCounter.GetAll();
+      return View("Index", allRepeatCounters);
+    }
+
   }
 }

@@ -11,7 +11,10 @@
 {
   @foreach (RepeatCounter repeatcounter in Model)
   {
-  <li>@repeatcounter.GetWord()</li>
+  <li>Word: @repeatcounter.GetWord() <br>
+  Sentence: @repeatcounter.GetSentence()<br>
+  Word Count: @repeatcounter.CheckMatches()
+  </li>
   }
 }
 

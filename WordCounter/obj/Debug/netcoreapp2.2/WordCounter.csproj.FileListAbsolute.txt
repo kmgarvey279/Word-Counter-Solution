@@ -22,3 +22,4 @@ C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\
 C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.Views.pdb
 C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.csproj.CopyComplete
 C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\Razor\Views\RepeatCounters\Index.g.cshtml.cs
+C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\Razor\Views\RepeatCounters\New.g.cshtml.cs
