@@ -4,10 +4,6 @@ body{
   text-align: center;
 }
 
-ul{
-  text-align: left;
-}
-
 div#sidebar {
     position:fixed;
     bottom:0px;
