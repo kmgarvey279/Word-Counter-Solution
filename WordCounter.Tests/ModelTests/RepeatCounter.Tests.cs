@@ -83,13 +83,13 @@ namespace WordCounter.Tests
     public void CheckMatches_ExcludeNonLetterStrings_Int()
     {
       RepeatCounter testRepeatCounter = new RepeatCounter("&&k&", "The word 'concatenate' and Catman contain the word 'cat'.");
-      Assert.AreEqual(-1, testRepeatCounter.CheckMatches());
+      Assert.AreEqual(0, testRepeatCounter.CheckMatches());
     }
     [TestMethod]
     public void CheckMatches_ExcludeWordLongerThanSentence_Int()
     {
       RepeatCounter testRepeatCounter = new RepeatCounter("concatinate", "cat");
-      Assert.AreEqual(-1, testRepeatCounter.CheckMatches());
+      Assert.AreEqual(0, testRepeatCounter.CheckMatches());
     }
 
     [TestMethod]

@@ -23,14 +23,6 @@ namespace WordCounter.Tests
       var result = indexView.ViewData.Model;
       Assert.IsInstanceOfType(result, typeof(List<RepeatCounter>));
     }
-    [TestMethod]
-    public void Create_RedirectsToCorrectAction_Index()
-    {
-      RepeatCountersController controller = new RepeatCountersController();
-      RedirectToActionResult actionResult = controller.Create("testword", "test sentence.") as RedirectToActionResult;
-      string result = actionResult.ActionName;
-      Assert.AreEqual(result, "Index");
 
-    }
   }
 }
