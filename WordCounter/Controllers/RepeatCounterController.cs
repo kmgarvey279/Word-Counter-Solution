@@ -3,6 +3,7 @@ using System;
 using Microsoft.AspNetCore.Mvc;
 using WordCounter.Models;
 
+
 namespace WordCounter.Controllers
 {
   public class RepeatCountersController : Controller
@@ -23,9 +24,16 @@ namespace WordCounter.Controllers
     [HttpPost("/repeatcounters")]
     public ActionResult Create(string wordInput, string sentenceInput)
     {
-      RepeatCounter newCounter = new RepeatCounter(wordInput, sentenceInput);
-      List<RepeatCounter> allRepeatCounters = RepeatCounter.GetAll();
-      return View("Index", allRepeatCounters);
+      if (wordInput != null && sentenceInput != null)
+      {
+        RepeatCounter newCounter = new RepeatCounter(wordInput, sentenceInput);
+        List<RepeatCounter> allRepeatCounters = RepeatCounter.GetAll();
+        return View("Index", allRepeatCounters);
+      }
+      else
+      {
+        return View("New");
+      }
     }
 
   }

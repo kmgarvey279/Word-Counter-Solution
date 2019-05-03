@@ -1,3 +1,15 @@
 body{
-  background-color: lightyellow; 
+  background-color: lightyellow;
+  margin-left: 160px;
+}
+
+div#sidebar {
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    height:100%;
+    width:160px;
+    color:#CCC;
+    background:#333;
+    padding:8px;
 }

@@ -7,7 +7,6 @@ namespace WordCounter.Models
   {
     private string _word;
     private string _sentence;
-    // private int _id;
     private static List<RepeatCounter> _instances = new List<RepeatCounter> { };
 
     public RepeatCounter(string word, string sentence)
@@ -15,7 +14,6 @@ namespace WordCounter.Models
       _word = word;
       _sentence = sentence;
       _instances.Add(this);
-      // _id = _instances.Count;
     }
 
     public int CheckMatches()
