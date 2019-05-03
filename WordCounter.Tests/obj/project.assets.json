@@ -11736,7 +11736,7 @@
       ]
     },
     "System.Runtime.Serialization.Json/4.0.2": {
-      "sha512": "+7DIJhnKYgCzUgcLbVTtRQb2l1M0FP549XFlFkQM5lmNiUBl44AfNbx4bz61xA8PzLtlYwfmif4JJJW7MPPnjg==",
+      "sha512": "zKGeh5VNC8GrloCENrOASybeiICkTmnvmV4zr9AheXgbwiH5ODi29/BaFpgt1El6WjWM50VQOIKvRJSrX6uLdg==",
       "type": "package",
       "path": "system.runtime.serialization.json/4.0.2",
       "files": [

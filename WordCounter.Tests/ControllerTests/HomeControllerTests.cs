@@ -7,7 +7,7 @@ using WordCounter.Models;
 namespace WordCounter.Tests
 {
   [TestClass]
-  public class HomeControllerTests
+  public class HomeControllerTest
   {
     [TestMethod]
     public void Index_ReturnsCorrectView_True()

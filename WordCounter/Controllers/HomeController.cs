@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
+
 namespace WordCounter.Controllers
 {
   public class HomeController : Controller
@@ -10,6 +11,6 @@ namespace WordCounter.Controllers
     {
       return new ViewResult();
     }
-    
+
   }
 }
