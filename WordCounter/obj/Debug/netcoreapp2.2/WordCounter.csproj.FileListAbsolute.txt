@@ -27,3 +27,5 @@ C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\
 C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Sidebar.g.cshtml.cs
 C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\Razor\Views\CheckScores\Index.g.cshtml.cs
 C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\Razor\Views\CheckScores\New.g.cshtml.cs
+C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\Razor\Views\LeetSpeekTranslators\Index.g.cshtml.cs
+C:\Users\Kevin\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\Razor\Views\LeetSpeekTranslators\New.g.cshtml.cs
