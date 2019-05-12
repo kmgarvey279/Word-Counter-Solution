@@ -20,7 +20,15 @@ namespace WordCounter.Models
     {
       int matches = 0;
       string wordToCheck = _word.ToUpper();
-      string[] sentenceToCheck = _sentence.ToUpper().Split(' ');
+      string sentence = "";
+      foreach (char c in _sentence)
+      {
+        if (Char.IsLetter(c) || c == ' ')
+        {
+          sentence += c;
+        }
+      }
+      string[] sentenceToCheck = sentence.ToUpper().Split(' ');
       foreach (string splitWord in sentenceToCheck)
       {
         if (wordToCheck == splitWord)
